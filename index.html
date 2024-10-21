@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de HTML Externo</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+
+<body class="pywebview-drag-region">
+  <nav class="windows_controls">
+    <img src="./assets/minimize.png" alt="minimize" id="minimize" width="16" height="16">
+    <img src="./assets/close.png" alt="close" id="close" width="16" height="16">
+  </nav>
+  <div class="container">
+    <h1 id="logo">DocStudio</h1>
+    <div class="buttons_functions">
+      <button type="button" title="Convert PDF to DOC format" class="btn1">
+        PDF to DOC
+      </button>
+      <button type="button" title="Convert DOC to PDF format" class="btn1">
+        DOC to PDF
+      </button>
+      <button type="button" title="Edit PDF files directly" class="btn1">
+        PDF Editor
+      </button>
+      <button type="button" title="Perform OCR scan on documents" class="btn1">
+        OCR Scan
+      </button>
+      <button type="button" title="Convert JSON files to XLS format" class="btn1">
+        JSON to XLS
+      </button>
+      <button type="button" title="Convert PDF files to images" class="btn1">
+        PDF to IMG
+      </button>
+      <button type="button" title="Convert TXT files to DOC format" class="btn1">
+        TXT to DOC
+      </button>
+      <div class="drag_area">
+        <input type="file" name="handle_dropped_file" id="file_input" hidden accept=".pdf,.doc,.docx,.xls,.xlsx,.json,.txt,.png,.jpg,.jpeg">
+        <label for="file_input" class="btn1" title="Drag or click to select file">
+          <img src="./assets/dragDropIcon.png" alt="Drag or click to select file">
+          Cick or drop your file here
+        </label>
+      </div>
+    </div>
+    <div class="more">
+      <a href="https://github.com/vxncius-dev" target="_blank" title="Created by vxncius">
+        <img src="./assets/github.png" alt="github_logo" width="35" height="35">
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
